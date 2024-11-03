@@ -1,0 +1,54 @@
+@import './nav.less';
+@import './footer.less';
+@import './body.less';
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+
+.nav-list {
+    flex-direction: column; 
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+}
+
+
+footer {
+    margin-top: 20px; 
+}
+
+
+@media (min-width: 768px) {
+    .nav-list {
+        flex-direction: row; 
+    }
+
+    .galeria {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+}
+
+
+nav {
+    padding: 15px; 
+}
+
+footer {
+    padding: 20px; 
+}
